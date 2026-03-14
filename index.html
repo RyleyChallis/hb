@@ -26,8 +26,8 @@
     </nav>
 
     <section class="section" id="landing">
-        <h1>Hellenic Bakery</h1>
-        <h3>A Slice of Greece in the Heart of Brighton.</h3>
+        <h1>Authentic. Artisanal. Greek.</h1>
+        <h3>A Slice of Athens in the Heart of Brighton.</h3>
 
         <div class="landing-cta">
             <a href="menu.html">View Today's Menu</a>
@@ -182,6 +182,47 @@
                         </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>We'd Love to Hear from You</h2>
+
+        <div class="container">
+            <form class="contact-form" action="" method="post">
+                <div class="contact-left">
+                    <div class="header">
+                        <i class="fa-solid fa-signature"></i>
+                        <h4>Name:</h4>
+                    </div>
+                    <input type="text" name="name" placeholder="E.g. John Doe" required>
+
+                    <div class="header">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email:</h4>
+                    </div>
+                    <input type="text" name="email" placeholder="E.g. johndoe@email.com" required>
+
+                    <div class="header">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <h4>Reason:</h4>
+                    </div>
+                    <select class="select-wrapper" name="reason" required>
+                        <option value="Select an option..." disabled></option>
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="opportunity">Job Opportunity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="contact-right">
+                    <div class="header">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <h4>Message:</h4>
+                </div>
+                <textarea type="text" name="message" placeholder="How may we help you today?" required></textarea>
+                </div>
+            </form>
         </div>
     </section>
 

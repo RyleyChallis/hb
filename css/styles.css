@@ -25,10 +25,14 @@ body, html {
 }
 
 #landing h1 {
-    font-size: 3.2rem;
-    font-family: playfair display;
-    color: var(--white);
-    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    text-transform: uppercase;
 }
 
 #landing h3 {
@@ -134,6 +138,7 @@ body, html {
 .showcase-card h4 {
     font-size: 23px;
     font-family: playfair display;
+    color: var(--main-blue);
     text-align: left;
     padding: 0 15px;
     margin: 0;
@@ -444,6 +449,8 @@ body, html {
 
 .key-content h4 {
     font-size: 32px;
+    font-family: 'playfair display';
+    color: var(--main-text);
     text-align: right;
 }
 
@@ -487,12 +494,56 @@ body, html {
 }
 
 #location .map-content iframe {
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 450px;
     border: none;
     border-radius: 8px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
     z-index: 10;
+}
+
+#contact {
+    background-color: var(--first-section);
+    position: relative;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+#contact .contact-form {
+    width: 100% !important;
+    background-color: var(--main-blue);
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .contact-form .header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+}
+
+.contact-form .contact-left, .contact-right {
+    flex: 1;
+    width: 48%;
+}
+
+.contact-left, .contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left input {
+    max-width: 200px;
+    width: 100%;
+    height: 45px;
 }
 
 #footer {
