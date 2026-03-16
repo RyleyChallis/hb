@@ -51,7 +51,8 @@ body, html {
     text-align: center;
 }
 
-#showcase::after {
+#showcase::after,
+#contact::after {
     content: "";
     position: absolute;
     top: 0;
@@ -510,23 +511,32 @@ body, html {
 #contact .container {
     display: flex;
     flex-direction: column;
+    align-items: center; 
     max-width: 80%;
+    margin: 0 auto;
 }
 
 #contact .contact-form {
-    width: 100% !important;
-    background-color: var(--main-blue);
-    border-radius: 10px;
-    height: auto;
     display: flex;
     flex-direction: row;
+    width: 100vw;
+    padding: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+
+    background-color: var(--main-blue);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 10;
 }
 
 #contact .contact-form .header {
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
     gap: 10px;
     color: white;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .contact-form .contact-left, .contact-right {
@@ -540,10 +550,18 @@ body, html {
     gap: 30px;
 }
 
-.contact-left input {
-    max-width: 200px;
+.contact-left input, select {
+    max-width: 90%;
     width: 100%;
     height: 45px;
+    margin: 0 !important;
+
+    border-radius: 5px;
+}
+
+.contact-right textarea {
+    height: 60% !important;
+    border-radius: 5px;
 }
 
 #footer {
